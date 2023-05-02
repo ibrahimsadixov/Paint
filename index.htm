@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+</head>
+
+<body>
+
+    <div class="tools">
+     
+
+        <button id="resetBtn">Reset</button>
+        
+        <button id="brushBtn">Brush</button>
+
+        <button id="eraserBtn">Eraser</button>
+
+        
+        <div class="canvasColor">
+            <p>Canvas Color:</p>
+            <input id="canvasColor" type="color" value="#FFFFFF"/>
+        </div>
+
+        <p>Brush Color:</p>
+        <input type="color" id="colorPicker">
+
+        <p>Brush Size:</p>
+        <input id="draw" type="range" value="10" min="1" max="50" >
+        <span id="drawSize">10</span>
+
+        <p>Eraser Size:</p>
+        <input id="erase" type="range" value="15" min="10" max="50" step="5">
+        <span id="eraseSize">15</span>
+       
+
+    </div>
+    <canvas id="canvas">
+    </canvas>
+
+    
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/color.js"></script>
+ 
+</body>
+
+</html>

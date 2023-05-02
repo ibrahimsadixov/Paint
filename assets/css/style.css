@@ -1,0 +1,117 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+#canvas {
+    background-color: white;
+
+}
+.tools{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 1px solid grey;
+    background-color: #faf8f8;
+}
+.tools button{
+    cursor: pointer;
+}
+#colorPicker{
+    border: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  #canvasColor{
+    border: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  input[type=color]::-webkit-color-swatch {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  .canvasColor{
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+input{
+    cursor: pointer;
+}
+
+#resetBtn{
+    background-color:rgb(230, 76, 76);
+    border: 1px solid rgb(230, 76, 76);
+    border-radius: 15px;
+    width: 70px;
+    height: 30px;
+    color: white;
+    transition: .3s;
+}
+
+#resetBtn:hover{
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px;
+    width: 70px;
+    height: 30px;
+    color: rgb(230, 76, 76);
+    transition: .3s;
+}
+
+#eraserBtn{
+    background-color: rgb(48, 148, 187);
+    border: 1px solid rgb(48, 148, 187);
+    border-radius: 15px;
+    width: 70px;
+    height: 30px;
+    color: white;
+}
+
+#eraserBtn:hover{
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px;
+    width: 70px;
+    height: 30px;
+    color: rgb(48, 148, 187);
+    transition: .3s;
+}
+
+
+#brushBtn{
+    background-color: rgb(48, 182, 187);
+    border: 1px solid rgb(48, 182, 187);
+    border-radius: 15px;
+    width: 70px;
+    height: 30px;
+    color: white;
+}
+
+#brushBtn:hover{
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px;
+    width: 70px;
+    height: 30px;
+    color: rgb(48, 182, 187);
+    transition: .3s;
+}
+.active{
+    box-shadow:
+    0 0 0 3px grey !important;
+}
